@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "server": "nodemon --ignore ./client/ server.js"
+    "start": "node server.js",
+    "server": "node --ignore ./client/ server.js"
   },
   "dependencies": {
     "cors": "*",
