@@ -1,0 +1,23 @@
+{
+  "name": "mern_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "server": "nodemon --ignore ./client/ server.js"
+  },
+  "dependencies": {
+    "cors": "*",
+    "dotenv": "*",
+    "express": "^4.18.1",
+    "mongoose": "*",
+    "react-router-dom": "^6.3.0",
+    "use-local-storage": "^2.3.6",
+    "@faker-js/faker": "^7.4.0",
+    "nodemon": "*"
+  },
+  "author": "Franko, Uri, Vanessa",
+  "license": "ISC"
+
+}
