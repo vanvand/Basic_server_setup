@@ -12,7 +12,7 @@ app.use(express.json());
 
 // connect DB
 // task: ADD YOUR DB LINK FROM .env
-const uri = process.env.DB_LINK;
+const uri = "mongodb+srv://DCI_admin:MiauWuff2208@cluster0.kblqpki.mongodb.net/mernapp";
 mongoose
   .connect(uri)
   .then(() => {
