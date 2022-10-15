@@ -15,6 +15,19 @@ const createUser = (req, res) => {
     });
 };
 
+const getAllUsers = (req,res) => {
+    User.find( (err, result) => {
+        res.json(result)
+    })
+}
+
+const getUserById = (req,res) => {
+    const userId = req.params.id
+    User.findById( userId, (err, result) => {
+        res.json(result)
+    })
+}
+
 const loginUser = (req, res) => {
     // console.log(req.body) // request from FE
 
@@ -52,4 +65,4 @@ const addUser = (req, res) => {
     });
 };
 
-module.exports = { createUser, addUser, loginUser, routeUser };
+module.exports = { createUser, getAllUsers, getUserById, addUser, loginUser, routeUser };

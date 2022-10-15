@@ -1,2 +1,4 @@
-# MERN_e-commerce_app
-# MERN_e-commerce-app_server
+### Basics server Set-up
+
+node.js, express, mongoose, MongoDB
+

@@ -17,7 +17,7 @@
     "@faker-js/faker": "^7.4.0",
     "nodemon": "*"
   },
-  "author": "Franko, Uri, Vanessa",
+  "author": "Vanessa",
   "license": "ISC"
 
 }

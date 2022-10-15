@@ -7,14 +7,13 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors()); // add cors settings here to remove cors authetication problem
+app.use(cors()); // add cors settings here to remove cors authentication problem
 app.use(express.json());
 
 // connect DB
 // task: ADD YOUR DB LINK FROM .env
-// const uri = "mongodb+srv://...";
 mongoose
-  .connect(uri)
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log('My Database is connected successfully');
   })
